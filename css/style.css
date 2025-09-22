@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: chocolate;
+    background-color: rgb(14, 6, 0);
 }
 
 html, body{
@@ -27,7 +27,7 @@ header .pfp{
     border-radius: 50%;
     border:5px solid rgb(80, 33, 0);
     margin-left: 0px;
-    background-color: rgb(80, 64, 40);
+    background-color: rgb(236, 183, 103);
     text-align: center;
     padding: 20px;
     background-image: url('./../img/Goku.jpg');
