@@ -13,11 +13,28 @@ html, body{
     margin: 0;
     padding: 0;
 }
-
 header{
+    background-color: rgb(236, 183, 103);
+    height: 700px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid rgb(80, 33, 0);
+}
+
+header .pfp{
+    height: 500px;
+    width: 700px;
+    border-radius: 50%;
+    border:5px solid rgb(80, 33, 0);
+    margin-left: 0px;
     background-color: rgb(236, 183, 103);
     text-align: center;
     padding: 20px;
+    background-image: url('./../img/Goku.jpg');
+    background-repeat: no-repeat;
+    background-position: -210px center;
+    background-size: 130%;
+    margin: auto;
 }
 
     .egg {
