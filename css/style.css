@@ -1,4 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Vast+Shadow&display=swap');
+
+/* colors 1.rgb(255, 204, 153) 
+          1.chocolate
+          2.rgb(236, 183, 103)
+*/
+.vast-shadow-regular {
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -7,11 +29,29 @@
 
 body{
     background-color: chocolate;
+    font-family: "Black Ops One", system-ui;
+  font-weight: 200;
+  font-style: normal;
+    font-size: 15px;
+    margin:50px;
+    color: rgb(59, 0, 0);
+    line-height: 20px;
+    text-align: center;
 }
 
 html, body{
     margin: 0;
     padding: 0;
+}
+p, li, ol{
+      font-family: "Black Ops One", system-ui;
+  font-weight: 100;
+  font-style: normal;
+    font-size: 15px;
+    margin: 20px;
+    color: rgb(59, 0, 0);
+    
+    
 }
 header{
     background-color: rgb(236, 183, 103);
@@ -36,20 +76,39 @@ header .pfp{
     background-size: 130%;
     margin: auto;
 }
-
-    .egg {
-    border:5px solid rgb(80, 33, 0);
-    height: 500px;
-    width: 700px;
-    border-radius: 50%;
-    margin-left: 0px;
+p.caption{
+    font-size: 20px;
+    color: gray;
+    font-style: "Vast Shadow";
+    margin: 0px;
 }
-
 header h1{
       font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
     font-size: 80px;
-    margin: 10px;
+    margin: 60px;
     color: rgb(214, 89, 0);
+}
+h2{
+      font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(59, 0, 0);
+}
+
+main{
+    height: 400px;
+    width: 800px;
+    text-align: center;
+    padding: 235px;
+    border-bottom: 5px solid rgb(80, 33, 0);
+    margin: 0 auto;
+}
+main img{
+    height: 300px;
+    width: 600px;
+    border:5px solid rgb(80, 33, 0);
+    border-radius: 20px;
+    margin-top: 20px;
 }
