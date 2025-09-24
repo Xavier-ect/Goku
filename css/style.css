@@ -40,6 +40,19 @@ p, li, ol{
   line-height: 30px;
     font-size: 30px;
 }
+ul, ol {
+   padding-left: 90px;
+  list-style-position: inside;
+}
+a{
+  color: rgb(240, 190, 140);
+}
+a:hover{
+  color: rgb(255, 60, 0);
+}
+a:active{
+  color: rgb(255, 60, 0);
+}
 p.caption{
     font-size: 20px;
     color: gray;
