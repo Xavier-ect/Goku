@@ -7,6 +7,7 @@
 /* colors 1.rgb(255, 204, 153) 
           1.chocolate
           2.rgb(236, 183, 103)
+          rgb(59, 0, 0)
 */
 .vast-shadow-regular {
   font-family: "Vast Shadow", serif;
@@ -30,51 +31,14 @@
 body{
     background-color: chocolate;
     font-family: "Black Ops One", system-ui;
-  font-weight: 200;
-  font-style: normal;
-    font-size: 15px;
-    margin:50px;
-    color: rgb(59, 0, 0);
-    line-height: 20px;
-    text-align: center;
 }
-
 html, body{
     margin: 0;
     padding: 0;
 }
 p, li, ol{
-      font-family: "Black Ops One", system-ui;
-  font-weight: 100;
-  font-style: normal;
-    font-size: 15px;
-    margin: 20px;
-    color: rgb(59, 0, 0);
-    
-    
-}
-header{
-    background-color: rgb(236, 183, 103);
-    height: 700px;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 5px solid rgb(80, 33, 0);
-}
-
-header .pfp{
-    height: 500px;
-    width: 700px;
-    border-radius: 50%;
-    border:5px solid rgb(80, 33, 0);
-    margin-left: 0px;
-    background-color: rgb(236, 183, 103);
-    text-align: center;
-    padding: 20px;
-    background-image: url('./../img/Goku.jpg');
-    background-repeat: no-repeat;
-    background-position: -210px center;
-    background-size: 130%;
-    margin: auto;
+  line-height: 30px;
+    font-size: 30px;
 }
 p.caption{
     font-size: 20px;
@@ -82,33 +46,51 @@ p.caption{
     font-style: "Vast Shadow";
     margin: 0px;
 }
-header h1{
-      font-family: "Bebas Neue", sans-serif;
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 204, 153);
+    border-bottom: 5px solid rgb(80, 33, 0);
+}
+header .pfp{
+    height: 518px;
+    width: 721px;
+    border-radius: 50%;
+    border:5px solid rgb(80, 33, 0);
+    padding: 20px;
+    background-image: url('./../img/Goku.jpg');
+    background-repeat: no-repeat;
+    background-position: -210px center;
+    background-size: 130%;
+    margin: 0 auto;
+}
+h1{
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-    font-size: 80px;
-    margin: 60px;
-    color: rgb(214, 89, 0);
+  font-size: 100px;
+  margin: 0px;
+  color: rgb(214, 89, 0);
 }
 h2{
-      font-family: "Bebas Neue", sans-serif;
-    font-size: 40px;
-    margin: 10px;
-    color: rgb(59, 0, 0);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin: 60px;
+  color: rgb(59, 0, 0);
+  text-align: center;
 }
 
 main{
-    height: 400px;
     width: 800px;
-    text-align: center;
-    padding: 235px;
-    border-bottom: 5px solid rgb(80, 33, 0);
     margin: 0 auto;
 }
 main img{
-    height: 300px;
-    width: 600px;
+height: 258px;
+    width: 501px;
     border:5px solid rgb(80, 33, 0);
-    border-radius: 20px;
-    margin-top: 20px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-position: -210px center;
+    margin: -10 auto;
 }
