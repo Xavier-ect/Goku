@@ -32,39 +32,48 @@ body{
     background-color: chocolate;
     font-family: "Black Ops One", system-ui;
 }
+
 html, body{
     margin: 0;
     padding: 0;
 }
+
 p, li, ol{
   line-height: 30px;
     font-size: 30px;
 }
+
 ul, ol {
    padding-left: 90px;
   list-style-position: inside;
 }
+
 a{
   color: rgb(240, 190, 140);
 }
+
 a:hover{
   color: rgb(255, 60, 0);
 }
+
 a:active{
-  color: rgb(255, 60, 0);
+  color: rgb(87, 85, 85);
 }
+
 p.caption{
     font-size: 20px;
     color: gray;
     font-style: "Vast Shadow";
     margin: 0px;
 }
+
 header{
     text-align: center;
     padding: 20px;
     background-color: rgb(255, 204, 153);
     border-bottom: 5px solid rgb(80, 33, 0);
 }
+
 header .pfp{
     height: 518px;
     width: 721px;
@@ -77,6 +86,7 @@ header .pfp{
     background-size: 130%;
     margin: 0 auto;
 }
+
 h1{
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -85,6 +95,7 @@ h1{
   margin: 0px;
   color: rgb(214, 89, 0);
 }
+
 h2{
   font-weight: 400;
   font-style: normal;
@@ -98,6 +109,7 @@ main{
     width: 800px;
     margin: 0 auto;
 }
+
 main img{
 height: 258px;
     width: 500px;
