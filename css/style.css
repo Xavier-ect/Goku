@@ -119,3 +119,12 @@ height: 258px;
     background-position: -210px center;
     margin: -10 auto;
 }
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(54, 54, 54);
+    border-top: 5px solid rgb(80, 33, 0);
+    margin-top: 40px;
+    font-style: italic;
+font-family: "Vast Shadow", serif;
+}
