@@ -33,14 +33,18 @@ body{
     font-family: "Black Ops One", system-ui;
 }
 
+/* Make sizing easier to reason about on all screens */
+*, *::before, *::after { box-sizing: border-box; }
+
 html, body{
     margin: 0;
     padding: 0;
 }
 
 p, li, ol{
-  line-height: 30px;
-    font-size: 30px;
+  line-height: 1.6;
+  /* use a fluid font size that caps for large screens but scales down on small screens */
+  font-size: clamp(16px, 2.2vw, 30px);
 }
 
 ul, ol {
@@ -48,8 +52,10 @@ ul, ol {
   list-style-position: inside;
 }
 
-a{
+a:link{
   color: rgb(240, 190, 140);
+}
+a:visited{ color: rgb(243, 229, 39); 
 }
 
 a:hover{
@@ -75,16 +81,18 @@ header{
 }
 
 header .pfp{
-    height: 518px;
-    width: 721px;
-    border-radius: 50%;
-    border:5px solid rgb(80, 33, 0);
-    padding: 20px;
-    background-image: url('./../img/Goku.jpg');
-    background-repeat: no-repeat;
-    background-position: -210px center;
-    background-size: 130%;
-    margin: 0 auto;
+  /* responsive circular avatar */
+  width: min(70vw, 450px);
+  height: min(70vw, 360px);
+  border-radius: 50%;
+  border:5px solid rgb(80, 33, 0);
+  padding: 20px;
+  background-image: url('./../img/Goku.jpg');
+  background-repeat: no-repeat;
+  background-position: -160px 0px;
+  background-size: cover;
+  margin: 0 auto;
+  display: block;
 }
 
 h1{
@@ -106,18 +114,18 @@ h2{
 }
 
 main{
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 main img{
-height: 258px;
-    width: 500px;
-    border:5px solid rgb(80, 33, 0);
-    padding: 0px;
-    background-repeat: no-repeat;
-    background-position: -210px center;
-    margin: -10 auto;
+  display: block;
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+  max-width: 100%;
+  border:5px solid rgb(80, 33, 0);
+  padding: 0px;
+  margin: 0 auto;
 }
 footer{
     text-align: center;
@@ -127,4 +135,34 @@ footer{
     margin-top: 40px;
     font-style: italic;
 font-family: "Vast Shadow", serif;
+}
+
+footer .content{
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer a { color: rgb(243, 184, 76); 
+}
+footer a:visited { color: rgb(218, 221, 44);
+}
+
+footer a:hover{
+  color: rgb(255, 60, 0);
+}
+
+/* Mobile / small screen adjustments */
+@media (max-width: 800px) {
+  header{ padding: 16px; }
+  h1{ font-size: clamp(36px, 8vw, 72px); }
+  h2{ font-size: clamp(24px, 6vw, 40px); margin: 30px; }
+  main{ padding: 0 16px; }
+  ul, ol { padding-left: 28px; }
+}
+
+@media (max-width: 420px) {
+  header{ padding: 12px; }
+  h1{ font-size: 40px; }
+  p, li, ol{ font-size: 16px; line-height: 1.4; }
+  header .pfp{ width: min(60vw, 260px); height: min(60vw, 260px); padding: 14px; }
+  main{ max-width: 100%; }
 }
