@@ -1,0 +1,174 @@
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=Vast+Shadow&display=swap');
+
+.vast-shadow-regular {
+  font-family: "Vast Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background-color: #06196f;
+    font-family: "Black Ops One", system-ui;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+p, li, ol{
+  line-height: 1.6;
+  font-size: clamp(16px, 2.2vw, 30px);
+  color: #00c2ff;
+}
+
+ul, ol {
+   padding-left: 90px;
+  list-style-position: inside;
+}
+
+a:link{
+  color: rgb(240, 190, 140);
+}
+a:visited{ color: rgb(171 0 255); 
+}
+
+a:hover{
+  color: rgb(0, 255, 242);
+}
+
+a:active{
+  color: rgb(87, 85, 85);
+}
+
+p.caption{
+    font-size: 20px;
+    color: gray;
+    font-style: "Vast Shadow";
+    margin: 0px;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(5 120 255);
+    border-bottom: 5px solid rgb(3 0 255);
+}
+
+header .pfp{
+
+  width: min(70vw, 450px);
+  height: min(70vw, 360px);
+  border-radius: 50%;
+  border:5px solid rgb(80, 33, 0);
+  padding: 20px;
+  background-image: url('./../img/Goku.jpg');
+  background-repeat: no-repeat;
+  background-position: -160px 0px;
+  background-size: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+header .pfp-vegeta{
+  width: min(70vw, 450px);
+  height: min(70vw, 360px);
+  border-radius: 50%;
+  border:5px solid rgb(16, 0, 161);
+  padding: 20px;
+  background-image: url('./../img/vegeta.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+  margin: 0px;
+  color: rgb(0 6 255);
+}
+
+h2{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin: 60px;
+  color: rgb(167 218 249);
+  text-align: center;
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main img{
+  display: block;
+  width: 100%;
+  height: auto; 
+  max-width: 100%;
+  border:5px solid #0069ff;
+  padding: 0px;
+  margin: 0 auto;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(54, 54, 54);
+    border-top: 5px solid rgb(80, 33, 0);
+    margin-top: 40px;
+    font-style: italic;
+font-family: "Vast Shadow", serif;
+}
+
+footer .content{
+  max-width: 800px;
+  margin: 0 auto;
+}
+footer a { color: rgb(243, 184, 76); 
+}
+footer a:visited { color: rgb(171 0 255);
+}
+
+footer a:hover{
+  color: rgb(0, 255, 242);
+}
+
+@media (max-width: 800px) {
+  header{ padding: 16px; }
+  h1{ font-size: clamp(36px, 8vw, 72px); }
+  h2{ font-size: clamp(24px, 6vw, 40px); margin: 30px; }
+  main{ padding: 0 16px; }
+  ul, ol { padding-left: 28px; }
+}
+
+@media (max-width: 420px) {
+  header{ padding: 12px; }
+  h1{ font-size: 40px; }
+  p, li, ol{ font-size: 16px; line-height: 1.4; }
+  header .pfp{ width: min(60vw, 260px); height: min(60vw, 260px); padding: 14px; }
+  main{ max-width: 100%; }
+}
