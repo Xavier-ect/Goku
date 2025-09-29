@@ -95,6 +95,19 @@ header .pfp{
   display: block;
 }
 
+header .pfp-vegeta{
+  width: min(70vw, 450px);
+  height: min(70vw, 360px);
+  border-radius: 50%;
+  border:5px solid rgb(16, 0, 161);
+  padding: 20px;
+  background-image: url('./../img/vegeta.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  margin: 0 auto;
+  display: block;
+}
+
 h1{
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
