@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap');
 
@@ -24,7 +24,7 @@
 }
 
 body{
-    background-color: #06196f;
+    background-color: #003311;
     font-family: "Black Ops One", system-ui;
 }
 
@@ -38,7 +38,7 @@ html, body{
 p, li, ol{
   line-height: 1.6;
   font-size: clamp(16px, 2.2vw, 30px);
-  color: #00c2ff;
+  color: rgb(158 255 162);
 }
 
 ul, ol {
@@ -47,9 +47,9 @@ ul, ol {
 }
 
 a:link{
-  color: rgb(102, 186, 255);
+  color: rgb(0 123 255);
 }
-a:visited{ color: rgb(171 0 255); 
+a:visited{ color: rgb(0 123 255); 
 }
 
 a:hover{
@@ -70,8 +70,8 @@ p.caption{
 header{
     text-align: center;
     padding: 20px;
-    background-color: rgb(5 120 255);
-    border-bottom: 5px solid rgb(3 0 255);
+    background-color: rgb(9 117 0);
+    border-bottom: 5px solid rgb(52 255 0);
 }
 
 header .pfp{
@@ -102,13 +102,26 @@ header .pfp-vegeta{
   display: block;
 }
 
+header .pfp-piccolo{
+  width: min(70vw, 450px);
+  height: min(70vw, 360px);
+  border-radius: 50%;
+  border:5px solid rgb(52 255 0);
+  padding: 20px;
+  background-image: url('./../gif/piccolo-aura-farm.gif');
+  background-position: -40px 0px;
+  background-size: cover;
+  margin: 0 auto;
+  display: block;
+}
+
 h1{
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
   margin: 0px;
-  color: rgb(0 6 255);
+  color: rgb(255 255 255);
 }
 
 h2{
@@ -116,7 +129,7 @@ h2{
   font-style: normal;
   font-size: 50px;
   margin: 60px;
-  color: rgb(167 218 249);
+  color: rgb(158 255 162);
   text-align: center;
 }
 
@@ -130,15 +143,16 @@ main img{
   width: 100%;
   height: auto; 
   max-width: 100%;
-  border:5px solid #0069ff;
+  border: 5px solid rgb(52, 255, 0); /* fixed syntax */
   padding: 0px;
   margin: 0 auto;
 }
+
 footer{
     text-align: center;
     padding: 20px;
     background-color: rgb(54, 54, 54);
-    border-top: 5px solid rgb(0 159 255);
+    border-top: 5px solid rgb(10 255 132);
     margin-top: 40px;
     font-style: italic;
 font-family: "Vast Shadow", serif;
@@ -150,7 +164,7 @@ footer .content{
 }
 footer a { color: rgb(102, 186, 255); 
 }
-footer a:visited { color: rgb(171 0 255);
+footer a:visited { color: rgb(0 253 255);
 }
 
 footer a:hover{
