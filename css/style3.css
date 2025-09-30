@@ -22,10 +22,23 @@
   font-weight: 400;
   font-style: normal;
 }
-
+/* dragon-ball-background */
 body{
-    background-color: #003311;
-    font-family: "Black Ops One", system-ui;
+  /* fallback color while image loads */
+  background-color: #003311;
+  /* image path is relative to the CSS file (css/ -> ../img/) */
+  background-image: url('./../img/DBZ-background2.jpg');
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  background-size: cover; /* scale to fill while preserving aspect ratio */
+  /* optional: pin image to viewport (may be ignored on some mobile browsers) */
+  background-attachment: fixed;
+  
+  font-family: "Black Ops One", system-ui;
+}
+/* mobile fallback: disable fixed attachment for performance/compat */
+@media (max-width: 800px) {
+  body { background-attachment: scroll; background-position: center top; }
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -38,7 +51,7 @@ html, body{
 p, li, ol{
   line-height: 1.6;
   font-size: clamp(16px, 2.2vw, 30px);
-  color: rgb(158 255 162);
+  color: rgb(1 45 3);
 }
 
 ul, ol {
@@ -68,6 +81,10 @@ p.caption{
 }
 
 header{
+  background-image: url('./../img/DB-everyone-sunset.jpg');
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
     text-align: center;
     padding: 20px;
     background-color: rgb(9 117 0);
@@ -129,7 +146,7 @@ h2{
   font-style: normal;
   font-size: 50px;
   margin: 60px;
-  color: rgb(158 255 162);
+  color: rgb(0 161 6);
   text-align: center;
 }
 
@@ -151,7 +168,7 @@ main img{
 footer{
     text-align: center;
     padding: 20px;
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(111 109 109);
     border-top: 5px solid rgb(10 255 132);
     margin-top: 40px;
     font-style: italic;
